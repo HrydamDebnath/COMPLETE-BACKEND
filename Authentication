@@ -1,0 +1,9 @@
+1. validation=
+[the data we get is this the correct data or not]
+
+2.verification={the data which ia given is this the correct email addresss of this perticular person or not}
+
+3.Authentication=
+{authenticate which user is sending the request}
+
+4.authorisation={different users have different powers}

@@ -1,0 +1,38 @@
+1. Folder banao aur initialize karo:-
+=> npm init -y
+
+2. Express install karo:-
+=> npm install express
+
+NOW CODE:-
+
+// 1. Express library ko import kiya
+const express = require('express');
+
+// 2. app naam ka server instance banaya
+const app = express(); 
+
+// 3. Home page (/) par "Hello World" send kiya
+app.get("/", (req, res) => {
+    res.send("Hello World");
+});
+
+// 4. About page (/about) par "About Page" send kiya
+app.get("/about", (req, res) => {
+    res.send("About Page");
+});
+
+// 5. Port 3000 par server ko start kar diya
+app.net = app.listen(3000);
+
+
+
+Ab isko run karne ke liye terminal mein bas    node filename.js     chalana hai.
+
+
+
+
+
+
+
+npx nodemon file.name :-so the system updates automatically

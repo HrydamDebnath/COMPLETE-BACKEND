@@ -1,0 +1,13 @@
+1.when i submit the form
+
+2.then image and caption will go to the server with the help of api
+
+3.image will upload to the imagekit
+
+4.which will give me url in return 
+
+5.and  then we will save this url and caption in the database 
+
+6. and then we get the response
+
+7. and then we willnavigate it to the feed page

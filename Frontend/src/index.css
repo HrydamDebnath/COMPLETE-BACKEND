@@ -1,0 +1,168 @@
+*{
+  margin:0%;
+  padding:0%;
+  box-sizing:border-box;
+}
+
+html,body,#root{
+  height:100%;
+  width:100%;
+}
+
+/* Center container with a modern, soft background */
+.create-post-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #f0f2f5;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Stylish Heading */
+.create-post-section h1 {
+    color: #1a1a1a;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+/* Sleek Form Card Container */
+.create-post-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    background: #ffffff;
+    padding: 2.5rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 450px;
+    box-sizing: border-box;
+}
+
+/* Modernized Styling for Inputs */
+.create-post-section input[type="text"] {
+    padding: 12px 16px;
+    border: 1.5px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #333;
+    outline: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.create-post-section input[type="text"]:focus {
+    border-color: #4f46e5; /* Modern Royal Blue accent */
+    box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.1);
+}
+
+/* Clean Custom File Input Spacing */
+.create-post-section input[type="file"] {
+    font-size: 0.95rem;
+    color: #555;
+    padding: 8px 0;
+    cursor: pointer;
+}
+
+.create-post-section input[type="file"]::-webkit-file-upload-button {
+    background-color: #f3f4f6;
+    border: 1px solid #e5e7eb;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: 600;
+    color: #374151;
+    cursor: pointer;
+    margin-right: 12px;
+    transition: background-color 0.2s;
+}
+
+.create-post-section input[type="file"]::-webkit-file-upload-button:hover {
+    background-color: #e5e7eb;
+}
+
+/* Eye-catching Primary Action Button */
+.create-post-section button[type="submit"] {
+    background-color: #4f46e5;
+    color: #ffffff;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 12px rgba(79, 70, 229, 0.2);
+}
+
+.create-post-section button[type="submit"]:hover {
+    background-color: #4338ca;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(79, 70, 229, 0.3);
+}
+
+.create-post-section button[type="submit"]:active {
+    transform: translateY(1px);
+}
+/* Container Layout */
+.feed-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 24px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 32px 20px;
+    background-color: #f0f2f5;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Stylish Post Card */
+.feed-section .post-card {
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Hover effect on card */
+.feed-section .post-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Post Image Styling */
+.feed-section .post-card img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover; /* Prevents stretching */
+    display: block;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+/* Post Caption Text */
+.feed-section .post-card p {
+    margin: 0;
+    padding: 16px;
+    font-size: 0.95rem;
+    color: #262626;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+/* If no posts are available styling */
+.feed-section > p {
+    grid-column: 1 / -1;
+    text-align: center;
+    color: #8e8e8e;
+    font-size: 1.1rem;
+    padding: 40px 0;
+}

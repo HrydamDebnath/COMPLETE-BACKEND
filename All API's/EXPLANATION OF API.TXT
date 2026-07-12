@@ -1,0 +1,43 @@
+// 1.GET => server se data fetch karva ho tb use krten hai
+
+
+// app.get("/data", (req, res) => {
+//     res.send("Server se data fetch ho gaya");
+// });
+
+
+
+
+
+// 2.POST => server pr data send krna ho
+
+
+
+// app.post("/data", (req, res) => {
+//     res.send("Server par naya data send/create ho gaya");
+// });
+
+
+
+
+
+
+// 3.PATCH => server pr data already hai aur us data ko update krna ho tb use krten hai
+
+
+
+// app.patch("/data", (req, res) => {
+//     res.send("Server ka existing data update ho gaya");
+// });
+
+
+
+
+
+
+// 4.DELETE => server pr data hai aur us delete krna hai
+
+
+// app.delete("/data", (req, res) => {
+//     res.send("Server se data delete ho gaya");
+// });
